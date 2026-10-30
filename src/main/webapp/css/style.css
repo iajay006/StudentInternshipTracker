@@ -1,0 +1,111 @@
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fc;
+    color: #243047;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+h1, h2 {
+    color: #2456b3;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Buttons and links */
+.btn, button {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #2456b3;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn:hover, button:hover {
+    background: #193f89;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd4e0;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #9bbaf5;
+    border-color: #2456b3;
+}
+
+/* Tables */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #2456b3;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #e0e5ed;
+}
+
+tr:nth-child(even) {
+    background: #f8faff;
+}
+
+/* Cards */
+.card {
+    padding: 22px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #15284a12;
+}
+
+/* Mobile support */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

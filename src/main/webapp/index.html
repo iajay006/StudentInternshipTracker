@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Internship Tracker</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1f2937;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            box-shadow: 0 2px 8px #e5e7eb;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #4338ca;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4338ca;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            max-width: 750px;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .hero h1 span {
+            color: #4338ca;
+        }
+
+        .hero p {
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #6b7280;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #4338ca;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #4338ca;
+            color: #4338ca;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 8% 50px;
+        }
+
+        .feature {
+            flex: 1 1 220px;
+            max-width: 300px;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #e5e7eb;
+            text-align: center;
+        }
+
+        .feature h3 {
+            color: #4338ca;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6b7280;
+        }
+
+        @media (max-width: 500px) {
+            nav {
+                padding: 18px;
+            }
+
+            .logo {
+                font-size: 17px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Internship Tracker</div>
+
+        <div>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+
+        <h1>Manage Your <span>Internship Journey</span></h1>
+
+        <p>
+            Keep all your internship applications in one place.
+            Track companies, application status, stipends and deadlines
+            with your personal internship dashboard.
+        </p>
+
+        <div class="buttons">
+            <a href="register.html" class="btn primary">
+                Get Started
+            </a>
+
+            <a href="login.html" class="btn secondary">
+                Login
+            </a>
+        </div>
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature">
+            <h3>📋 Track Applications</h3>
+            <p>Manage your internship applications in one place.</p>
+        </div>
+
+        <div class="feature">
+            <h3>📅 Manage Deadlines</h3>
+            <p>Keep track of application dates and deadlines.</p>
+        </div>
+
+        <div class="feature">
+            <h3>📊 Monitor Progress</h3>
+            <p>Check whether applications are applied, selected or rejected.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Student Internship Tracker | Academic Project 2026</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Build output
+target/
+
+# IDE files
+.vscode/
+.idea/
+
+# Local configuration and secrets
+.env
+**/DatabaseConnection.java
+
+# Logs
+*.log
